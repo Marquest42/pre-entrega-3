@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -6,63 +7,387 @@
 body {
   background-color: #161616; }
 
-.main-pre-entrega {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  margin: 2rem; }
-  .main-pre-entrega h2 {
+.main-pre-entrega-home {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-areas: "p img" "h2 img" "p-dos img" "boton img";
+  justify-content: start;
+  justify-items: start; }
+  .main-pre-entrega-home .p-home {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 1rem;
+    display: grid;
+    grid-template-areas: "p img" "h2 img" "p-dos img" "boton img";
+    justify-content: center;
+    justify-items: center; }
+  .main-pre-entrega-home h2 {
     text-align: start;
     color: white;
     margin: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .main-pre-entrega h3 {
+  .main-pre-entrega-home h3 {
+    margin-left: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #620c94; }
+  .main-pre-entrega-home .boton {
+    background-color: #620c94;
+    padding: 0.6rem;
+    color: white;
+    font-weight: bold;
+    margin: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-content: center; }
+  .main-pre-entrega-home .img-home {
+    grid-area: img;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; }
+    .main-pre-entrega-home .img-home img {
+      width: 300px;
+      height: 350px; }
+
+.main-pre-entrega-home-2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-areas: "p img" "h2 img" "p-dos img" "boton img";
+  justify-content: start;
+  justify-items: start; }
+  .main-pre-entrega-home-2 .p-home {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 1rem;
+    display: grid;
+    grid-template-areas: "p img" "h2 img" "p-dos img" "boton img";
+    justify-content: center;
+    justify-items: center; }
+  .main-pre-entrega-home-2 h3 {
     margin-left: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white; }
-  .main-pre-entrega p {
-    text-align: start;
-    color: white;
-    margin: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .main-pre-entrega .boton {
+  .main-pre-entrega-home-2 h4 {
+    margin-left: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #620c94; }
+  .main-pre-entrega-home-2 .boton {
     background-color: #620c94;
     padding: 0.6rem;
     color: white;
     font-weight: bold;
     margin: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif; }
-  .main-pre-entrega .img-home {
-    justify-items: center;
+  .main-pre-entrega-home-2 .img-home {
     grid-area: img;
-    width: 30%;
-    justify-content: center; }
-  .main-pre-entrega .carousel slide {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; }
+    .main-pre-entrega-home-2 .img-home img {
+      width: 450px;
+      height: 350px; }
+
+.main-pre-entrega-home-3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  justify-content: center;
+  justify-items: center; }
+  .main-pre-entrega-home-3 .p-home {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 1rem;
+    text-align: center; }
+  .main-pre-entrega-home-3 h3 {
+    margin-left: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+  .main-pre-entrega-home-3 .boton {
+    background-color: #620c94;
+    padding: 0.6rem;
+    color: white;
+    font-weight: bold;
+    margin: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+.section-home {
+  background-color: #620c94;
+  display: block;
+  display: flex;
+  justify-content: center;
+  padding: 1rem; }
+  .section-home div {
     display: flex;
-    justify-items: center;
-    justify-content: center; }
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; }
+    .section-home div p {
+      color: white;
+      text-align: center; }
+    .section-home div h3 {
+      margin: 1rem;
+      color: white;
+      text-align: center; }
+    .section-home div img {
+      filter: drop-shadow(4px 7px 2px #161616);
+      width: 80px;
+      animation-name: animacion;
+      animation-duration: 2s;
+      animation-iteration-count: infinite; }
+
+@keyframes animacion {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(5px); }
+  100% {
+    transform: translateY(0); } }
+
+.main-pre-entrega-sobre-mí-1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-areas: "p img" "h2 img" "p-dos img" "boton img";
+  justify-content: start;
+  justify-items: start; }
+  .main-pre-entrega-sobre-mí-1 h2 {
+    text-align: start;
+    color: #620c94;
+    margin: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .main-pre-entrega-sobre-mí-1 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 1rem;
+    display: grid;
+    grid-template-areas: "p img" "h2 img" "p-dos img" "boton img";
+    justify-content: center;
+    justify-items: center; }
+  .main-pre-entrega-sobre-mí-1 .img-sobre-mí {
+    grid-area: img;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; }
+    .main-pre-entrega-sobre-mí-1 .img-sobre-mí img {
+      width: 350px;
+      height: 250px; }
+
+.main-pre-entrega-sobre-mí-2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 1rem;
+  padding: 1rem 5rem 1rem 5rem;
+  display: grid;
+  justify-content: center;
+  justify-items: center; }
+  .main-pre-entrega-sobre-mí-2 h3 {
+    margin-left: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #620c94; }
+  .main-pre-entrega-sobre-mí-2 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 1rem;
+    text-align: center; }
+  .main-pre-entrega-sobre-mí-2 .img-sobre-mí {
+    grid-area: img;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; }
+    .main-pre-entrega-sobre-mí-2 .img-sobre-mí img {
+      width: 300px;
+      height: 350px; }
+
+.main-pre-entrega-portafolio-1 {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem; }
+  .main-pre-entrega-portafolio-1 .carousel-item {
+    align-items: center; }
+    .main-pre-entrega-portafolio-1 .carousel-item img {
+      height: 350px;
+      width: 350px; }
+  .main-pre-entrega-portafolio-1 .section-portafolio {
+    align-items: center;
+    padding: 2rem;
+    margin: 1rem; }
+    .main-pre-entrega-portafolio-1 .section-portafolio img {
+      height: 350px;
+      width: 350px;
+      padding: 0.5rem; }
+  .main-pre-entrega-portafolio-1 h2 {
+    text-align: center;
+    color: white;
+    margin: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .main-pre-entrega-portafolio-1 h3 {
+    margin: 1rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; }
+
+.main-pre-entrega-contacto {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 1rem;
+  padding: 1rem 5rem 1rem 5rem;
+  display: grid;
+  justify-content: center;
+  justify-items: center; }
+  .main-pre-entrega-contacto h2 {
+    margin: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #620c94;
+    text-align: center; }
+  .main-pre-entrega-contacto p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 1rem;
+    text-align: center; }
+
+.main-pre-entrega-contacto-2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-areas: "p img" "h2 img" "p-dos img" "boton img"; }
+  .main-pre-entrega-contacto-2 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 1rem;
+    display: grid;
+    grid-template-areas: "p img" "h2 img" "p-dos img" "boton img"; }
+  .main-pre-entrega-contacto-2 h3 {
+    margin: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #620c94; }
+  .main-pre-entrega-contacto-2 .img-contacto {
+    grid-area: img;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; }
+    .main-pre-entrega-contacto-2 .img-contacto img {
+      width: 450px;
+      height: 350px; }
+
+.main-pre-entrega-servicios {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 3rem;
+  padding: 1rem;
+  display: grid;
+  justify-content: center;
+  justify-items: center; }
+  .main-pre-entrega-servicios h2 {
+    margin: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #620c94; }
+  .main-pre-entrega-servicios p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 1rem;
+    text-align: center; }
+
+.main-pre-entrega-servicios-2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-areas: "p img" "h2 img" "p-dos img" "boton img";
+  justify-content: start;
+  justify-items: start; }
+  .main-pre-entrega-servicios-2 h3 {
+    text-align: start;
+    color: #620c94;
+    margin: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .main-pre-entrega-servicios-2 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 1rem;
+    display: grid;
+    grid-template-areas: "p img" "h2 img" "p-dos img" "boton img";
+    justify-content: center;
+    justify-items: center; }
+  .main-pre-entrega-servicios-2 .img-servicios-1 {
+    grid-area: img;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; }
+    .main-pre-entrega-servicios-2 .img-servicios-1 img {
+      width: 350px;
+      height: 350px; }
+
+.main-pre-entrega-servicios-3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-areas: "img" "img" "h2"; }
+  .main-pre-entrega-servicios-3 h3 {
+    text-align: start;
+    color: #620c94;
+    margin: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+  .main-pre-entrega-servicios-3 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 1rem;
+    display: grid; }
+  .main-pre-entrega-servicios-3 .img-servicios-2 {
+    grid-area: img;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem; }
+    .main-pre-entrega-servicios-3 .img-servicios-2 img {
+      width: 250px;
+      height: 250px; }
 
 .footer-pre-entrega {
-  display: flex;
-  flex-direction: row;
-  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  background-color: #161616;
   padding: 10px;
-  margin-top: 10px;
+  margin: 1rem;
   flex-wrap: wrap; }
   .footer-pre-entrega p {
     color: white;
     text-align: center;
     align-items: flex-end;
     display: flex;
-    padding: 10px 10px 10px 100px; }
+    padding: 10px; }
   .footer-pre-entrega nav {
     display: flex;
     align-items: flex-end;
     text-align: end;
-    padding: 10px 10px 10px 50px; }
+    padding: 10px; }
     .footer-pre-entrega nav ul {
       display: flex;
-      column-gap: 5px; }
+      column-gap: 10px; }
       .footer-pre-entrega nav ul li {
         list-style: none;
         padding: 5px; }
